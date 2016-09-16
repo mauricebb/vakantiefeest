@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <style type = "text/css">
+
+        /* Het menu */
+        .menu {
+            width: 760px;
+            height: 80px;
+            margin: 0 auto;
+            padding: 0 5px 5px 5px;
+            background: #545454;
+        }
+
+        /* Dropdown Button */
+        .menu-item {
+            position: relative;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-item:hover .submenu{
+            display: block;
+        }
+
+        /* De dropdown menu */
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        .submenu a{
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="menu">
+    <button class="menu-item">Dropdown</button>
+    <div class="submenu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+    <button class="menu-item">Dropdown2</button>
+    <div class="submenu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+    <button class="menu-item">Dropdown2</button>
+    <div class="submenu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
