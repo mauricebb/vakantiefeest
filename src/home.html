@@ -14,12 +14,12 @@
         .menu {
             position: absolute;
             text-align: center;
-            width: 75%;
             padding: 2px 2px 2px 2px;
             /*background: #ffff00;*/
 
-            left:10%; right:10%;
-            top:15px;
+            left: 1%;
+            right: 1%;
+            top: 50px;
             margin: auto;
 
         }
@@ -34,8 +34,8 @@
             color: #0f00ff;
             font-weight: bold;
             border-radius: 5px;
-            min-width: 100px;
-            padding: 10px;
+            min-width: 10%;
+            padding: 5px;
             background-image: url("images/zand.jpg");
             background-size: cover;
             text-decoration-color: #e6ccb3;
@@ -70,20 +70,23 @@
         }
 
         /* Template div classes */
-        .links {
-            width: 49%;
+        .welcome {
+            width: 48%;
+                    /*b, r, o, l*/
             margin: 1% 0% 1% 0%;
-            height: 100px;
-            background-color: #ff0000;
+            background-color: #ffe6b3;
+            padding: 15px;
+            font-family: Arial;
             float: left;
         }
 
-        .rechts {
-            width: 49%;
-            margin: 1% 1% 1% 1%;
+        .aside{
+            width: 48%;
+            margin: 1% 0% 1% 0%;
+            padding: 10px;
             height: 100px;
             background-color: #00ffff;
-            float: left;
+            float: right;
         }
 
         .onder {
@@ -98,13 +101,14 @@
 </head>
 <body>
 
-<div style="text-align: right">
-<form>
+<form style="float: right; margin-left: 1%; margin-bottom: 1%">
     <input type="text" title="zoeken">
     <input type="submit" value="zoek">
 </form>
-</div>
-
+<nav style="float:right; margin-bottom: 1%">
+    <a href="#">Test</a> |
+    <a href="#">Contact</a>
+</nav>
 
 <!-- Container voor het headerplaatje (vakantiefeest_logo.png) en het menu -->
 <div class="image">
@@ -139,13 +143,24 @@
     </div>
 </div>
 
-<div class="links">
-TESTLINKS
-</div>
+<section class="welcome">
+<!--Welkom div-->
+<h2>Welkom</h2>
+    <hr>
+    <p>
+        Altijd al op een leuke vakantie willen gaan met vrienden? Dan is vakantiefeest.nl wat voor jou!
+    </p>
+    <p>
+        Wij organiseren jongerenvakanties naar de mooiste plekken in het buitenland! Daarbij horen
+        natuurlijk ook gezellige activiteiten, zoals kroegentochten en beachspelletjes. Bekijk dus snel ons aanbod
+        en wie weet zit je aankomende zomer gezellig met vrienden te chillen in het warme zuiden!
+    </p>
 
-<div class="rechts">
-TESTRECHTS
-</div>
+</section>
+
+<aside class="aside">
+    MUJJJJJJJJJJJJJ
+</aside>
 
 <div class="onder">
 TESTONDER
