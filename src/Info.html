@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+    <title>Home</title>
 
-<p>hey hoi</p>
+    <link rel="stylesheet" type="text/css" href="vakantiestyle.css">
+    <script src="vakantiefeest.js"></script>
+</head>
+<body background="images/zand.jpg" style="background-size: cover">
+
+
+<!-- Container voor het headerplaatje (vakantiefeest_logo.png) en het menu -->
+<div class="image">
+    <img src="images/vakantiefeest_logo.png" alt="vakantiefeest's logo" class="logo">
+    <nav class="menu" id="text">
+        <div class="menu_item">
+            <button class="drop_button" onclick="toHome()">Home</button>
+        </div>
+
+        <div class="menu_item">
+            <button class="drop_button" onclick="toInfo()">Info</button>
+        </div>
+
+        <div class="menu_item">
+            <button class="drop_button" disabled>Bestemmingen</button>
+            <div class="submenu">
+                <a href="portugal.html">Portugal</a>
+                <a href="spanje.html">Spanje</a>
+                <a href="griekenland.html">Griekenland</a>
+            </div>
+        </div>
+
+        <div class="menu_item">
+            <button class="drop_button" disabled>Activiteiten</button>
+            <div class="submenu">
+                <a href="kroegentocht.html">Kroegentocht</a>
+                <a href="strandactiviteiten.html">Strandactiviteiten</a>
+            </div>
+        </div>
+
+    </nav>
+</div>
+
+<section class="welcome">
+    <h1>REISDOCUMENTEN</h1>
+    <div class="textcontent"><p><a href="#Beschadigd" class="linkpage">Beschadigd reisdocument</a></p>
+        <p><a href="#Idkaart" class="linkpage">Paspoort en ID-kaart</a></p>
+        <h3 id="Beschadigd">Beschadigd reisdocument</h3>
+        <p>De controle op reisdocumenten is erg streng. Dit betekent dat paspoorten of ID-kaarten met krasjes,
+            scheurtjes of andere beschadigingen niet meer geaccepteerd worden.</p>
+        <p>Het reizen met de juiste documenten is jouw eigen verantwoordelijkheid. Vakantiefeest kan hiervoor niet
+            aansprakelijk worden gesteld.</p>
+        <h3 id="Idkaart">Paspoort en ID-kaart</h3>
+        <p>Je kunt naar alle onderstaande bestemmingen van Vakantiefeest afreizen met een geldig Nederlands paspoort
+            of geldige Nederlandse identiteitskaart.<br><br></p>
+        <ul>
+            <li>Griekenland</li>
+            <li>Portugal</li>
+            <li>Spanje</li>
+        </ul>
+        <p></p>
+
+    </div>
+</section>
+<section class="aside">
+    <h1>Over Vakantiefeest</h1>
+        <div class="textcontent"><h3>Reisorganisator</h3> Je reisorganisator:<br>
+            <p> Vakantiefeest GmbH<br> van galenstraat 4<br>Enschede<br> Nederland<br></p>
+            <p> Tel : +31-(0)6 12345678<br> e-mail: 413051@student.saxion.nl</p>
+            <p> Jouw reisbemiddelaar in Nederland is Vakantiefeest.</p>
+            <h3>Postadres:</h3>
+            <p> Postbus 1234<br> 9364 CK Hengelo</p>
+            <h3> Bezoekadres:</h3>
+            <p> Straatlaan 2<br> 5493 HS Enschede</p>
+            <p> tel: 0900-9876 (70 ct. per gesprek)<br>e-mail: <a
+                    href="geen link">klik hier om een e-mail te sturen</a><br> internet:
+                www.vakantiefeest.nl<br></p>
+            <p> IBAN: NL12 RABO 3456 7890 12<br> BIC: RABONL2U<br> Je kunt ons op onderstaande tijden telefonisch
+                bereiken:<br> maandag t/m vrijdag: 09.00 – 21.00<br> zaterdag: 09.00 – 17.00<br> zondag: gesloten<br>
+            </p>
+            <p> Op de site afgedrukte foto’s zijn ter beschikking gesteld door de accommodatieverschaffers, de
+                plaatselijke VVV’s, verschillende sportmerken en professionele fotografen. Voor kennelijke fouten, druk-
+                en zetfouten kan Vakantiefeest nooit aansprakelijk gesteld worden. Vakantiefeest behoudt zich het recht
+                voor om zonder toestemming van de klant prijzen en arrangementen te wijzigen indien de situatie daarom
+                vraagt.</p></div>
+
+</section>
+<footer class="onder">
+    <p>Deze vakantiefeest site is gemaakt door Maurice Bergboer en Lars Schuurman © Saxion 2016</p>
+</footer>
 </body>
 </html>

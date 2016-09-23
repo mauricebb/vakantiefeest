@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -7,21 +7,12 @@
     <link rel="stylesheet" type="text/css" href="vakantiestyle.css">
     <script src="vakantiefeest.js"></script>
 </head>
-<body>
-<header>
-    <form style="float: right; margin-left: 1%; margin-bottom: 1%">
-        <input type="text" title="zoeken">
-        <input type="submit" value="zoek">
-    </form>
-    <nav style="float:right; margin-bottom: 1%">
-        <a href="#">Test</a> |
-        <a href="#">Contact</a>
-    </nav>
-</header>
+<body background="images/zand.jpg" style="background-size: cover">
+
 
 <!-- Container voor het headerplaatje (vakantiefeest_logo.png) en het menu -->
 <div class="image">
-    <img src="images/vakantiefeest_logo.png" width="100%">
+    <img src="images/vakantiefeest_logo.png" alt="vakantiefeest's logo" class="logo">
     <nav class="menu" id="text">
         <div class="menu_item">
             <button class="drop_button" onclick="toHome()">Home</button>
@@ -32,16 +23,16 @@
         </div>
 
         <div class="menu_item">
-            <button class="drop_button">Bestemmingen</button>
+            <button class="drop_button" disabled>Bestemmingen</button>
             <div class="submenu">
-                <a href="#">Portugal</a>
-                <a href="#">Spanje</a>
-                <a href="#">Griekenland</a>
+                <a href="portugal.html">Portugal</a>
+                <a href="spanje.html">Spanje</a>
+                <a href="griekenland.html">Griekenland</a>
             </div>
         </div>
 
         <div class="menu_item">
-            <button class="drop_button">Activiteiten</button>
+            <button class="drop_button" disabled>Activiteiten</button>
             <div class="submenu">
                 <a href="kroegentocht.html">Kroegentocht</a>
                 <a href="strandactiviteiten.html">Strandactiviteiten</a>
@@ -66,7 +57,8 @@
 
 </section>
 
-<section class="aside" onshow="showSlides()">
+<section class="aside">
+
     <h2>Vakantie slideshow</h2>
     <p>Foto's gemaakt door onze feestgangers</p>
 
@@ -74,20 +66,17 @@
 
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img src="images/a.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
+            <img src="images/a.jpg" style="width:100%" alt="plaatje strand 1">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img src="images/b.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
+            <img src="images/b.jpg" style="width:100%" alt="plaatje hond">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <img src="images/c.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
+            <img src="images/c.jpg" style="width:100%" alt="plaatje strand 2">
         </div>
 
     </div>
@@ -98,10 +87,31 @@
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex> slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 </section>
 
 <footer class="onder">
-TESTONDER
+<p>Deze vakantiefeest site is gemaakt door Maurice Bergboer en Lars Schuurman © Saxion 2016</p>
 </footer>
 
 </body>
