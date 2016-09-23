@@ -3,6 +3,11 @@
     margin-top: 0.5%;
 }
 
+h3 {
+    color: #0000ff;
+    margin-bottom: 0%;
+}
+
 /* Het menu */
 .menu {
     position: absolute;
