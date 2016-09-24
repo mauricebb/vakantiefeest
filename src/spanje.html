@@ -64,6 +64,44 @@
         <p>
             Canarische eilanden info
         </p>
+        <button id="modalBtn" class="modalButton" onclick="showModal()">Boek reis</button>
+        <div id="Modal" class="modal">
+            <div class="modal-content">
+                <span class="close">x</span>
+                <form action="" id="hotelBoeking" onsubmit="return false;">
+                    <label>Soort hotel</label> <br>
+                    <input type="radio" name="selectedhotel" value="cheap" onclick="getTotal()" />
+                    Goedkoop hotel - €30 p.p. <br>
+                    <input type="radio" name="selectedhotel" value="standard" onclick="getTotal()" />
+                    Standaard hotel - €75 p.p. <br>
+                    <input type="radio" name="selectedhotel" value="luxe" onclick="getTotal()" />
+                    Luxe hotel - €100 p.p. <br> <br>
+                    <label>Aantal personen</label> <br>
+                    <select id="aantalPersonen" name='aantalPersonen' onchange="getTotal()">
+                        <option value="1">1 Persoon</option>
+                        <option value="2">2 Personen</option>
+                        <option value="3">3 Personen</option>
+                        <option value="4">4 Personen</option>
+                        <option value="5">5 Personen</option>
+                        <option value="6">6 Personen</option>
+                        <option value="7">7 Personen</option>
+                        <option value="8">8 Personen</option>
+                        <option value="9">9 Personen</option>
+                        <option value="10">10 Personen</option>
+                    </select>
+                    <br/>
+                    <p>
+                        <label for='welkompakket' class="inlinelabel">
+                             Welkom pakket €30</label>
+                        <input type="checkbox" id="welkompakket" name='allInclusive'
+                               onclick="getTotal()" />
+                    </p>
+
+                    <div id="totalPrice">Totale prijs: €0</div>
+                    <button disabled>Boeken</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div style="clear: both; width:50%; float: left; padding: 5px" align="left">
@@ -74,6 +112,8 @@
         <p>
             Ibiza info
         </p>
+        <button id="modalBtn2" class="modalButton" onclick="showModal()">Boek reis</button>
+
     </div>
 
     <div style="clear: both; width:50%; float: left; padding: 5px" align="left">
@@ -84,6 +124,7 @@
         <p>
             Mallorca info
         </p>
+        <button id="modalBtn3" class="modalButton" onclick="showModal()">Boek reis</button>
     </div>
 
 </section>
